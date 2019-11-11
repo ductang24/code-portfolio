@@ -23,7 +23,7 @@
 }
 
 h3 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-size: 6.5vmin;
     text-align: center;
 }
@@ -32,13 +32,9 @@ p {
     line-height: 1.5;
 }
 
-a {
-    text-decoration: none;
-}
-
 /* Custom Settings */
 main {
-    outline: 2px solid red;
+    outline: 0px solid red;
 }
 
 /* Grid System */
