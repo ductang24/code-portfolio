@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio-01</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/44b259f5e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="burger-btn">
+                <i class="fas fa-bars" onclick="openNav()"></i>
+            </div>
+            <div id="site-logo">
+                <a href="index.html">Duc Tang</a>
+            </div>
+        </header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="biography.html">Biography</a>
+            <a href="#">Works</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="hero-image">
+            <div class="container">
+                <h2>I've sacraficed my entire youth to become an apprentice of <strong>Design</strong>.<br>It has helped me to keep an open mind and an open heart,<br>to conquer tremendous adversity and find my own destiny.</h2>
+            </div>
+        </div>
+        <main>
+            <h3>Biography</h3>
+            <section id="biography">
+                <div class="bio-photo">
+                    <img src="./img/one-profile-square.png" alt="">
+                </div>
+                <div class="bio-intro">
+                    <article>
+                        <p>I am a UI/UX Designer based in Yokohama, Japan. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum dolor saepe, laborum alias molestias dolore accusamus debitis expedita, illum veritatis commodi, exercitationem ut. Sequi, reiciendis alias qui odio ratione assumenda.</p>
+                        <p>On March.2019, The Headmaster's Prize was awarded for the graduation project on the philosophy of design named "The Lifetime of Homosapiens".</p>
+                    </article>
+                </div>
+            </section>
+            <h3>Works</h3>
+            <section id="works">
+                <article class="article-grid">
+                    <div class="post-img">
+                        <img src="./img/library.jpg" alt="Library">
+                    </div>
+                    <div class="descript">
+                        <h4>MARIA BARBARA Central Library | Landing Page Concept</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis at hic eaque doloremque. Laboriosam officia laborum illo, est ab nisi?</p>
+                        <a class="in-active" href="#" target="_blank">Read more</a>
+                    </div>
+                </article>
+                <article class="article-grid">
+                    <div class="post-img">
+                        <img src="./img/trade-winds.jpg" alt="Trade winds">
+                    </div>
+                    <div class="descript">
+                        <h4>ENTRANCE Inc Oversea Sales Enterprise | Logo Design Competition</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis at hic eaque doloremque. Laboriosam officia laborum illo, est ab nisi?</p>
+                        <a class="in-active" href="#" target="_blank">Read more</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+        
+        <footer><p>Design and development by Duc Tang, Copyright &copy; 2019</p></footer>
+    </div>
 
+    <script src="./js/script.js"></script>
+</body>
+</html>
