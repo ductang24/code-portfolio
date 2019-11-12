@@ -1,0 +1,28 @@
+/* Button */
+.in-active {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px hsl(0, 0%, 60%);
+    color: var(--typo-one);
+    background-image: linear-gradient(rgb(62,184,229) 100%, rgb(44,160,202) 0%);
+}
+.in-active:hover {
+    animation-name: active-button;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+@keyframes active-button {
+    100% {
+        background-image: linear-gradient(hsl(210, 100%, 60%), hsl(217, 85%, 40%));
+    }
+}
+
+.in-active:active {
+    background-image: linear-gradient(hsl(217, 85%, 40%), hsl(210, 77%, 50%));
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}

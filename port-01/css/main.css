@@ -1,12 +1,17 @@
 @import url('sket.css');
 
+body {
+    background-color: hsl(0, 0%, 99%);
+}
+
 header {
     padding: 15px 0;
     display: flex;
     width: 100%;
     text-align: center;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-    background-color: var(--mater-one);
+    border-top: 1px solid rgb(0, 0, 0, 0.05);
+    background-image: linear-gradient(hsl(0, 0%, 100%),hsl(0, 0%, 95%));
 }
 header #site-logo {
     margin: 0 auto;
@@ -68,7 +73,7 @@ header a {
     margin-left: 50px;
   }
 
-  /* Hero Section */
+/* Hero Section */
 .hero-image {
     margin-bottom: 50px;
     display: flex;
@@ -91,13 +96,14 @@ header a {
     color: var(--typo-one);
 }
 
-/* Biography Section */
+/* Biography Page */
 #biography {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     display: grid;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas: 
-    "biophoto biointro biointro";
-    column-gap: 25px;
+    "biophoto biointro";
+    column-gap: 30px;
 }
 .bio-photo {
     grid-area: biophoto;
@@ -105,7 +111,8 @@ header a {
 .bio-photo img {
     width: 100%;
     height: auto;
-    border-radius: 3px;
+    border: 4px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 .bio-intro {
     grid-area: biointro;
@@ -123,31 +130,30 @@ header a {
     list-style-position: inside;
 }
 
-/* Works Section */
+/* Works Page */
 .article-grid {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 40vh;
     grid-template-areas: 
-        "image descript descript";
-    column-gap: 25px;
+        "image descript";
+    column-gap: 30px;
 }
-.works-img {
+.article-grid .works-img {
     grid-area: image;
+    overflow: hidden;
 }
-.descript {
+.article-grid .descript {
     grid-area: descript;
-}
-h4 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding-bottom: 10px;
 }
 .article-grid p {
     margin-bottom: 20px;
 }
-.article-grid img {
+.article-grid .works-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Post Section */
@@ -177,6 +183,46 @@ h4 {
     box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Contact Page */
+#contact {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "guide form";
+    column-gap: 30px;
+}
+.contact-guide {
+    grid-area: guide;
+}
+.contact-form form {
+    margin: auto 20px;
+}
+.contact-form input {
+    margin: 10px auto 20px auto;
+    width: 100%;
+    height: 2rem;
+}
+.contact-form textarea {
+    margin: 10px auto;
+    width: 100%;
+}
+.contact-form .namefield {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "fname lname";
+    column-gap: 20px;
+}
+.firstname {
+    grid-area: fname;
+}
+.lastname {
+    grid-area: lname;
+}
+
 /* Footer Section */
 footer {
     margin-top: 30px;
@@ -185,22 +231,52 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 2.3vmin;
+    color: var(--typo-one);
+    background-color: var(--typo-two);
 }
 
 @media(max-width: 768px) {
+    #biography {
+        margin-bottom: 150px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "biophoto"
+        "biointro";
+        row-gap: 25px;
+    }
     .article-grid {
         display: grid;
+        grid-template-rows: 30vh 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
         "image"
         "descript";
         row-gap: 15px;
     }
-    #biography {
-        margin-bottom: 150px;
+    #contact {
         display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        "biophoto"
-        "biointro";
+        "guide"
+        "form";
         row-gap: 25px;
+    }
+    .contact-form .namefield {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "fname"
+            "lname";
+        column-gap: 20px;
+    }
+    .firstname {
+        grid-area: fname;
+    }
+    .lastname {
+        grid-area: lname;
     }
 }

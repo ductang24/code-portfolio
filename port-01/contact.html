@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio-01</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/44b259f5e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="burger-btn">
+                <i class="fas fa-bars" onclick="openNav()"></i>
+            </div>
+            <div id="site-logo">
+                <a href="index.html">Duc Tang</a>
+            </div>
+        </header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="biography.html">Biography</a>
+            <a href="works.html">Works</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <main>
+            <h3>Contact</h3>
+            <section id="contact">
+                <div class="contact-guide">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque cupiditate culpa doloremque. Esse sit incidunt repellat et quaerat asperiores voluptate eaque minus aspernatur provident perferendis ab soluta in reiciendis, laboriosam, doloribus odio delectus tempore dicta optio, qui voluptatum fuga. Reprehenderit placeat at, consectetur cum non autem expedita consequatur quibusdam ea?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus harum repellat autem, id ut nam at consectetur aspernatur error consequuntur exercitationem quaerat voluptatem ab nobis.</p>
+                </div>
+                <div class="contact-form">
+                    <form action="" method="post">
+                        <div class="namefield">
+                            <div class="firstname">
+                                <label for="fname">First name</label><br>
+                                <input type="text" id="fname" name="firstname" required="">
+                            </div>
+                            <div class="lastname">
+                                <label for="lname">Last name</label><br>
+                                <input type="text" id="lname" name="lastname" required>
+                            </div>
+                        </div>
+                        <label for="mail">E-mail</label><br>
+                        <input type="email" id="mail" name="user_mail">
+                        <label for="msg">Message</label><br>
+                        <textarea id="msg" name="user_message" rows="10"></textarea>
+                        <button class="active-btn" type="submit">Send you message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        
+        <footer><p>Design and development by Duc Tang, 2019</p></footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
