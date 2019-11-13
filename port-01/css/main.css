@@ -46,7 +46,7 @@ header a {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: var(--mater-two);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -55,7 +55,7 @@ header a {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.2rem;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -287,7 +287,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.3vmin;
+    font-size: 1rem;
     color: var(--typo-one);
     background-color: var(--typo-two);
 }
