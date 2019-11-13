@@ -102,21 +102,32 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
     z-index: -1;
-    background: url('../img/photo_01.jpg') no-repeat center center fixed;
+    height: 40vh;
     background-size: cover;
 }
 .inner-hero .container {
     margin: auto 20vmin;
 }
 .inner-hero h2 {
-    font-size: 6vmin;
-    font-weight: 400;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7.5vh;
+    font-weight: 300;
     line-height: 1.3;
     text-align: center;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     color: var(--typo-one);
+}
+/* Multisection Hero */
+.works-hero {
+    background: url('../img/photo_02.jpg') no-repeat center 40% fixed;
+}
+.bio-hero {
+    background: url('../img/photo_01.jpg') no-repeat center 40% fixed;
+}
+.contact-hero {
+    background: url('../img/contact-hero.jpg') no-repeat center 40% fixed;
 }
 
 /* Biography Page */
